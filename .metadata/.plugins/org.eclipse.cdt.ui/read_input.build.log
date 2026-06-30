@@ -1,0 +1,10 @@
+18:42:00 **** Incremental Build of configuration Debug for project read_input ****
+make -j12 all 
+arm-none-eabi-size  read_input.elf 
+   text	   data	    bss	    dec	    hex	filename
+    812	      0	   1568	   2380	    94c	read_input.elf
+Finished building: default.size.stdout
+ 
+
+18:42:00 Build Finished. 0 errors, 0 warnings. (took 150ms)
+

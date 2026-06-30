@@ -1,0 +1,89 @@
+19:18:42 **** Incremental Build of configuration Debug for project keypad_interface ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:55:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   55 |         printf("1\n");
+      |         ^~~~~~
+../Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include <stdint.h>
+  +++ |+#include <stdio.h>
+   26 | void delay(){
+../Src/main.c:55:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   55 |         printf("1\n");
+      |         ^~~~~~
+../Src/main.c:55:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:58:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   58 |         printf("2\n");
+      |         ^~~~~~
+../Src/main.c:58:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:62:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   62 |         printf("3\n");
+      |         ^~~~~~
+../Src/main.c:62:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:66:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   66 |                 printf("A\n");
+      |                 ^~~~~~
+../Src/main.c:66:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:74:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   74 |         printf("4\n");
+      |         ^~~~~~
+../Src/main.c:74:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:77:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   77 |         printf("5\n");
+      |         ^~~~~~
+../Src/main.c:77:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:81:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   81 |         printf("6\n");
+      |         ^~~~~~
+../Src/main.c:81:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:85:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   85 |                 printf("B\n");
+      |                 ^~~~~~
+../Src/main.c:85:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:93:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   93 |         printf("7\n");
+      |         ^~~~~~
+../Src/main.c:93:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:96:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   96 |         printf("8\n");
+      |         ^~~~~~
+../Src/main.c:96:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:100:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  100 |         printf("9\n");
+      |         ^~~~~~
+../Src/main.c:100:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:104:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  104 |                 printf("C\n");
+      |                 ^~~~~~
+../Src/main.c:104:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:112:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  112 |         printf("*\n");
+      |         ^~~~~~
+../Src/main.c:112:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:115:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  115 |         printf("0\n");
+      |         ^~~~~~
+../Src/main.c:115:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:119:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  119 |         printf("#\n");
+      |         ^~~~~~
+../Src/main.c:119:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Src/main.c:123:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  123 |                 printf("D\n");
+      |                 ^~~~~~
+../Src/main.c:123:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "keypad_interface.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\hp\Desktop\gnss viewer\embededc\my_workspace\target\keypad_interface\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="keypad_interface.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: keypad_interface.elf
+ 
+arm-none-eabi-size  keypad_interface.elf 
+arm-none-eabi-objdump -h -S keypad_interface.elf  > "keypad_interface.list"
+   text	   data	    bss	    dec	    hex	filename
+   4080	     92	   1900	   6072	   17b8	keypad_interface.elf
+Finished building: default.size.stdout
+ 
+Finished building: keypad_interface.list
+ 
+
+19:18:43 Build Finished. 0 errors, 17 warnings. (took 448ms)
+
