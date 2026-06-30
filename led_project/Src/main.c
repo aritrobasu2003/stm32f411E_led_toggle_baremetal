@@ -37,7 +37,7 @@ uint32_t *pPortDoutputdatareg=(uint32_t*)0x40020C14;
 while(1){
 	*pPortDoutputdatareg|=(1<<12);
 for(uint32_t i=0;i<3000000;i++);
-*pPortDoutputdatareg&=~(1<<12);
+*pPortDoutputdatareg&=~(0<<12);
 for(uint32_t i=0;i<3000000;i++);
 
 }
